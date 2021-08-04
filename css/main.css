@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --dark-blue:  hsl(184, 100%, 22%);
+    --dark-green: hsl(179, 100%, 13%);
+}
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    Font-size: 15px;
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    background-color: hsl(0, 0%, 95%);
+}
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    height: 100vh;
+    border-radius: 10px
+}
+.container > div {
+    padding: 40px 
+}
+.container .box1 {
+    background-color: var(--orange);
+    border-radius: 10px 0 0 10px;
+}
+.container .box2 {
+    background-color: var(--dark-blue);
+}
+.container .box3 {
+    background-color: var(--dark-green);
+    border-radius: 0 10px 10px 0;
+}
+.container div img {
+    margin-bottom: 25px;
+}
+.container div h2 {
+    font-size: 2.5rem;
+    color: white;
+    color: hsl(0, 0%, 95%);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.container div p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.6;
+    margin-bottom: 80px;
+    font-size: 1.2rem
+}
+.container div button {
+    padding: 13px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    transition: 0.5s;
+    border: 2px solid white;
+}
+.container div button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+}
+.container .box1 button {
+    color: var(--orange);
+}
+.container .box2 button {
+    color: var(--dark-blue);
+}
+.container .box3 button {
+    color: var(--dark-green);
+}
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        padding: 90px 30px;
+        height: auto;
+    }
+    .container > div {
+        padding: 45px 
+    }
+    .container .box1 {
+        border-radius: 10px 10px 0 0;
+    }
+    .container .box3 {
+        border-radius: 0 0 10px 10px;
+    }
+    .container div p {
+        margin-bottom: 30px
+    }
+    .container div img {
+        margin-bottom: 25px
+    }
+}
